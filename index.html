@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedro — Estudante de Desenvolvimento de Sistemas</title>
+<meta name="description" content="Portfólio de Pedro: interfaces claras, código organizado e experiências digitais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div class="bar" aria-hidden="true"></div><div class="hud" aria-hidden="true">SCROLL <span id="hud">000</span>%</div>
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="fallback" aria-hidden="true"></div>
+<a class="skip" href="#sobre">Pular para o conteúdo</a>
+<header class="nav">
+  <a class="logo" href="#inicio">PEDRO</a>
+  <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+  <nav id="menu" aria-label="Principal">
+    <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
+  </nav>
+</header>
+<main>
+<section id="inicio" class="hero">
+  <p class="tag">// 01 — dev.system</p>
+  <h1>PEDRO</h1>
+  <p class="role">Estudante de Desenvolvimento de Sistemas</p>
+  <p class="lead">Transformando ideias em experiências digitais.</p>
+  <p class="muted">Sou Pedro, Desenvolvedor de Sistemas. Gosto de transformar ideias em soluções digitais funcionais, com foco em interfaces claras e código organizado.</p>
+  <div class="row"><a class="btn primary" href="#projetos">Explorar projetos</a><a class="btn" href="#contato">Entrar em contato</a></div>
+  <a class="scroll" href="#sobre">role para explorar ↓</a>
+</section>
+<section id="sobre" class="panel reveal">
+  <p class="tag">// 02 — sobre</p>
+  <h2>Além do código.</h2>
+  <p class="big">Sou Pedro, Desenvolvedor de Sistemas. Gosto de transformar ideias em soluções digitais funcionais, com foco em interfaces claras e código organizado.</p>
+  <p class="muted">Tenho interesse em desenvolvimento front-end, construção de interfaces e aplicação de tecnologias para criar experiências digitais úteis, organizadas e visualmente consistentes.</p>
+  <dl class="facts"><div><dt>Cargo</dt><dd>Estudante de Desenvolvimento de Sistemas</dd></div><div><dt>Foco</dt><dd>Front-end: interfaces claras e código organizado</dd></div><div><dt>Habilidades</dt><dd>HTML5 · CSS3 · JavaScript · Inteligência Artificial</dd></div><div><dt>Projetos</dt><dd>Sinuca Game · Taskly</dd></div></dl>
+</section>
+<section id="habilidades" class="panel reveal">
+  <p class="tag">// 03 — habilidades</p>
+  <h2>Ferramentas para transformar ideias.</h2>
+  <div class="skills" role="group" aria-label="Habilidades">
+    <button class="skill" aria-pressed="true" aria-controls="skill-info" data-t="Front-end" data-d="Construção de interfaces, organização visual e desenvolvimento de experiências para navegadores."><b>Front-end</b><small>Construção de interfaces, organização visual e desenvolvimento de experiências para navegadores.</small></button>
+    <button class="skill" aria-pressed="false" aria-controls="skill-info" data-t="HTML5" data-d="Estruturação semântica de páginas."><b>HTML5</b><small>Estruturação semântica de páginas.</small></button>
+    <button class="skill" aria-pressed="false" aria-controls="skill-info" data-t="CSS3" data-d="Estilização, layouts e animações."><b>CSS3</b><small>Estilização, layouts e animações.</small></button>
+    <button class="skill" aria-pressed="false" aria-controls="skill-info" data-t="JavaScript" data-d="Interatividade e comportamento dinâmico."><b>JavaScript</b><small>Interatividade e comportamento dinâmico.</small></button>
+    <button class="skill" aria-pressed="false" aria-controls="skill-info" data-t="Inteligência Artificial" data-d="Interesse em tecnologias de IA e suas aplicações."><b>Inteligência Artificial</b><small>Interesse em tecnologias de IA e suas aplicações.</small></button>
+  </div>
+  <div id="skill-info" class="info sr" aria-live="polite"><h3>Front-end</h3><p>Construção de interfaces, organização visual e desenvolvimento de experiências para navegadores.</p></div>
+</section>
+<section id="projetos" class="panel wide reveal">
+  <p class="tag">// 04 — projetos</p>
+  <h2>Projetos que ganham vida.</h2>
+  <p class="muted">Experimentos, aplicações e ideias transformadas em código.</p>
+  <div class="cards">
+    <article class="card" data-proj="0"><span class="n">Projeto 01</span><h3>Sinuca Game</h3><p>Jogo de sinuca desenvolvido para navegador.</p><small class="url">sinucagame.vercel.app</small><a class="btn primary" href="https://sinucagame.vercel.app/" target="_blank" rel="noopener noreferrer">Explorar projeto ↗<span class="sr"> Sinuca Game (nova aba)</span></a></article>
+    <article class="card" data-proj="1"><span class="n">Projeto 02</span><h3>Taskly</h3><p>Aplicação para organização e gerenciamento de tarefas.</p><small class="url">taskl-yatt.vercel.app</small><a class="btn primary" href="https://taskl-yatt.vercel.app/" target="_blank" rel="noopener noreferrer">Explorar projeto ↗<span class="sr"> Taskly (nova aba)</span></a></article>
+  </div>
+</section>
+<section id="processo" class="panel reveal">
+  <p class="tag">// 05 — processo</p>
+  <h2>Da ideia à implementação.</h2>
+  <ol class="steps"><li><b>01</b> Ideia<span>Definir o que será construído.</span></li><li><b>02</b> Estrutura<span>Organizar páginas, componentes e dados.</span></li><li><b>03</b> Desenvolvimento<span>Escrever e testar o código.</span></li><li><b>04</b> Experiência final<span>Entregar algo claro de usar.</span></li></ol>
+  <p class="muted">Representação conceitual de como ideias podem se tornar aplicações digitais.</p>
+</section>
+<section id="contato" class="panel reveal">
+  <p class="tag">// 06 — contato</p>
+  <h2>Vamos criar algo interessante?</h2>
+  <p class="big">Tem uma ideia, um projeto ou uma oportunidade? Entre em contato.</p>
+  <div class="contact"><a href="mailto:p2010hv@gmail.com"><span>E-mail</span><b>p2010hv@gmail.com</b></a><a href="https://wa.me/5519999611169" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><b>+55 19 99961-1169</b></a></div>
+</section>
+</main>
+<footer>
+  <strong>PEDRO — Desenvolvedor de Sistemas</strong>
+  <span>Transformando ideias em experiências digitais.</span>
+  <span>© 2026 Pedro. Todos os direitos reservados.</span>
+  <a href="#inicio">Voltar ao topo ↑</a>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
